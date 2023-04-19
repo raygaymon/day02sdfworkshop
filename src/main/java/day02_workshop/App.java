@@ -31,6 +31,15 @@ public class App
 
         }
 
+        FixedDepositAccount makeMeRich = new FixedDepositAccount ("Poor Boy", "34059384058934", 3500f, 5, 3);
+        FixedDepositAccount makeMeRich2 = new FixedDepositAccount ("Poor Girl", "34534", 566f, 12, 3);
+        FixedDepositAccount makeMeRich3 = new FixedDepositAccount ("Poor Thing", "378978987", 3f, 5, 3);
+
+        makeMeRich.deposit(30000f);
+        makeMeRich2.withdraw (300);
+        makeMeRich3.getBalance();
+
+
         
     }
 }

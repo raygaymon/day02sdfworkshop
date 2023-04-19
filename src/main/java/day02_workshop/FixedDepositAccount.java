@@ -1,9 +1,5 @@
 package day02_workshop;
 
-import java.util.Date;
-import java.util.ArrayList;
-import java.util.List;
-
 public class FixedDepositAccount extends BankAccount {
 
     private float interest;
@@ -52,11 +48,10 @@ public class FixedDepositAccount extends BankAccount {
     }
 
     //calling on parent class' super method in function use super.(thing)
-    public float getBalance(String accountName) {
-        return super.getAccountBalance() * (100 + interest);
+    public float getBalance() {
+        float newBalance = super.getAccountBalance() * (100 + interest)/100;
+        System.out.println("Your account now has: $" + newBalance);
+        return newBalance;
+        }
+        
     }
-
-
-    
-    
-}
